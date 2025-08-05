@@ -6,6 +6,8 @@ interface Student {
     namn: string;
     email: string;
     kurs: string;
+    age?: number; // Valfritt fält för ålder
+    active?: boolean; // Valfritt fält för aktiv status
 }
 
 // Exempel på studenter
