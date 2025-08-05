@@ -1,7 +1,8 @@
 // Huvudfil för studentkatalog applikation
+import { updateAge } from "./StudentAge.js";
 
 // Interface för student
-interface Student {
+export interface Student {
     id: number;
     namn: string;
     email: string;
@@ -9,7 +10,7 @@ interface Student {
 }
 
 // Exempel på studenter
-const studenter: Student[] = [
+export const studenter: Student[] = [
     {
         id: 1,
         namn: "Anna Andersson",
@@ -53,4 +54,5 @@ function visaStudenter(): void {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Studentkatalog laddad');
     visaStudenter();
+  updateAge();
 });
