@@ -1,7 +1,7 @@
-import { Student, studenter } from "./main.js";
+import { Student, studenter } from "./studentModel.js";
 
-interface StudentWithAge extends Student {
-  age: number;
+export interface StudentWithAge extends Student {
+  age: number | undefined;
 }
 
 function addAge(students: Student[]): StudentWithAge[] {
