@@ -1,8 +1,16 @@
-import { Student, studenter } from "./studentModel.js";
+import { Student } from "./studentModel.js";
+
 
 export interface StudentWithAge extends Student {
   age: number | undefined;
 }
+
+export function updateAge() {
+  const currentStudentList: Student[] = JSON.parse(localStorage.getItem("studentList") || "[]");
+  const studenterWithAge = addAge(currentStudentList);
+  displayAge(studenterWithAge);
+}
+    
 
 function addAge(students: Student[]): StudentWithAge[] {
   const minAge = 25;
@@ -11,7 +19,7 @@ function addAge(students: Student[]): StudentWithAge[] {
   return students.map((student) => {
     const studentWithAge = {
       ...student,
-      age: Math.floor(Math.random() * (maxAge - minAge) + minAge),
+      age:  Math.floor(Math.random() * (maxAge - minAge + 1)) + minAge,
     };
     return studentWithAge;
   });
@@ -32,7 +40,3 @@ function displayAge(students: StudentWithAge[]) {
   }
 }
 
-export function updateAge() {
-  const studenterWithAge = addAge(studenter);
-  displayAge(studenterWithAge);
-}

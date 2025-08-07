@@ -26,6 +26,8 @@ export function visaStudenter(studenter: Student[]): void {
 
         studentDiv.innerHTML = `
             <h3>${student.namn}</h3>
+            <p>ID: ${student.id}</p>
+            <p>Email: ${student.email}</p>
             <p>Kurs: ${student.kurs}</p>
             <p class="status">${student.isActive ? 'Aktiv' : 'Inaktiv'}</p>
 
