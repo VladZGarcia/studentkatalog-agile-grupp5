@@ -34,7 +34,7 @@ function handleAddStudent(event: Event): void {
     isActive: studentIsActiveInput.checked  
   };
 
-  studentList.push(newStudent);
+  studentList.unshift(newStudent);
   localStorage.setItem("studentList", JSON.stringify(studentList));
 
   showToast("Student added successfully!");
