@@ -24,6 +24,10 @@ h1 {
     margin: 0 auto;
 }
 
+.list-header img {
+     height: 20px;
+ }
+
 .student-card {
     background: #f4f4f4;
     border: 1px solid #ddd;

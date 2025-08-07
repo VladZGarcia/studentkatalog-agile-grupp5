@@ -1,5 +1,6 @@
 import { Student } from '../utils/studentModel.js';
 
+
 // Funktion för att visa studenters namn
 export function visaStudenter(studenter: Student[]): void {
     const studentListElement = document.getElementById('student-list');
@@ -23,11 +24,11 @@ export function visaStudenter(studenter: Student[]): void {
         studentDiv.classList.add(statusClass);
 
 
-
         studentDiv.innerHTML = `
             <h3>${student.namn}</h3>
             <p>Kurs: ${student.kurs}</p>
             <p class="status">${student.isActive ? 'Aktiv' : 'Inaktiv'}</p>
+
         `;
         studentListElement.appendChild(studentDiv);
     });
