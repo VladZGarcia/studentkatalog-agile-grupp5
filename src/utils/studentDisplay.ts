@@ -16,8 +16,18 @@ export function visaStudenter(studenter: Student[]): void {
     studenter.forEach(student => {
         const studentDiv = document.createElement('div');
         studentDiv.className = 'student-card';
+
+        // Lägg till aktiv/inaktiv klass baserat på isActive
+        const statusClass = student.isActive ? 'active' : 'inactive';
+
+        studentDiv.classList.add(statusClass);
+
+
+
         studentDiv.innerHTML = `
             <h3>${student.namn}</h3>
+            <p>Kurs: ${student.kurs}</p>
+            <p class="status">${student.isActive ? 'Aktiv' : 'Inaktiv'}</p>
         `;
         studentListElement.appendChild(studentDiv);
     });
