@@ -31,6 +31,7 @@ function handleAddStudent(event: Event): void {
     email: studentEmailInput.value.trim(),
     kurs: studentClassInput.value.trim(),
     age: studentAgeInput.value ? parseInt(studentAgeInput.value) : undefined,
+    isActive: studentIsActiveInput.checked  
   };
 
   studentList.push(newStudent);
