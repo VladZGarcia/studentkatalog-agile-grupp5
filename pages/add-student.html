@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/add-student.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/add-student.css" />
     <title>Add Student</title>
     <script src="../dist/pages/AddStudent.js" type="module" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Add Student</h1>
     <form action="add-student" method="POST">
-        <label for="studentId">Student ID:</label>
-        <input type="text" id="studentId" placeholder="Student ID" name="studentId" required>
-        <label for="name">Namn:</label>
-        <input type="text" id="name" placeholder="Student namn" name="name" required>
-        <label for="email">E-post:</label>
-        <input type="email" id="email" placeholder="Student e-post" name="email" required>
-        <label for="age">Ålder:</label>
-        <input type="number" id="age" placeholder="Student ålder" name="age" required>
-        <label for="class">Klass:</label>
-        <input type="text" id="class" placeholder="Student klass" name="class" required>
-        <label for="isActive">Aktiv:</label>
-        <input type="checkbox" id="isActive" name="isActive">
+      <label for="studentId">Student ID:</label>
+      <input
+        type="text"
+        id="studentId"
+        placeholder="Student ID"
+        name="studentId"
+        required
+      />
+      <label for="name">Namn:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Student namn"
+        name="name"
+        required
+      />
+      <label for="email">E-post:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Student e-post"
+        name="email"
+        required
+      />
+      <label for="age">Ålder:</label>
+      <input
+        type="number"
+        id="age"
+        placeholder="Student ålder"
+        name="age"
+        required
+      />
+      <label for="class">Klass:</label>
+      <input
+        type="text"
+        id="class"
+        placeholder="Student klass"
+        name="class"
+        required
+      />
+      <label for="isActive">Aktiv:</label>
+      <input type="checkbox" id="isActive" name="isActive" />
 
-        <button type="submit">Lägg till elev</button>
+      <button type="submit">Lägg till elev</button>
     </form>
-</body>
+  </body>
 </html>
