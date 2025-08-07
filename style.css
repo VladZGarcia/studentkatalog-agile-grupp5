@@ -46,3 +46,11 @@ h1 {
     margin: 5px 0;
     color: #666;
 }
+
+.active {
+    background-color: lightgreen;
+}
+
+.inactive {
+    background-color: lightcoral;
+}
