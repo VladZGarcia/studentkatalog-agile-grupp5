@@ -1,4 +1,4 @@
-import { Student } from './studentModel';
+import { Student } from '../utils/studentModel.js';
 
 // Funktion för att visa studenters namn
 export function visaStudenter(studenter: Student[]): void {
