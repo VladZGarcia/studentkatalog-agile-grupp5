@@ -1,4 +1,4 @@
-import { showToast } from "../utils/userInteractions.js";
+import { showToast } from "../utils/interactions/userInteractions.js";
 
 
 let studentList: Student[] = [];
